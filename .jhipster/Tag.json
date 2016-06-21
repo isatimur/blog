@@ -1,0 +1,23 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "post",
+      "otherEntityName": "posts",
+      "relationshipType": "many-to-many",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160610202405",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no"
+}

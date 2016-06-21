@@ -1,0 +1,34 @@
+
+entity Blog {
+	name String,
+    handle String
+}
+
+entity Posts {
+	title String,
+    content Blob,
+    creattionDate ZonedDateTime
+
+}
+
+entity Tag {
+	name String
+}
+
+relationship OneToMany {
+	User{login} to Blog{user(login)}
+}
+
+relationship OneToMany {
+	Blog{name} to Posts{blog(name)}
+}
+
+relationship ManyToMany {
+	Tag{post} to Posts{tag}
+}
+
+
+
+paginate Posts, Tag with pagination
+
+

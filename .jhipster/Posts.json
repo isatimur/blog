@@ -1,0 +1,41 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "blog",
+      "otherEntityName": "blog",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "tag",
+      "otherEntityName": "tag",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "post"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "content",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "creattionDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20160610202404",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no"
+}
